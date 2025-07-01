@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied while the app is launching (splash screen etc.) -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Splash screen background -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+    <!-- Main app theme used after launch -->
+    <style name="NormalTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- App background behind Flutter UI -->
+        <item name="android:windowBackground">?android:colorBackground</item>
+
+        <!-- Make status bar transparent -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
